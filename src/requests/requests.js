@@ -1,4 +1,4 @@
-const TMDB_API_KEY = "536414a664f9940313d96cb2d30adb22"
+const TMDB_API_KEY = process.env.REACT_APP_TMDB_API_KEY
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${TMDB_API_KEY}&language=en_US`,
   fetchNetflixOriginals: `/discover/tv?api_key=${TMDB_API_KEY}&with_networks=213`,
